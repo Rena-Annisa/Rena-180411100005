@@ -1,0 +1,3706 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Statistik Deskriptif">
+      
+      
+        <link rel="canonical" href="https://rena.github.io/rena/180411100005/getting-started/">
+      
+      
+        <meta name="author" content="Rena Annisa">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>STATISTIK DESKRIPTIF - Penambangan Data</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.750b69bd.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#statistik-deskriptif" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://rena.github.io/rena/180411100005" title="Penambangan Data" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Penambangan Data
+            </span>
+            <span class="md-header-nav__topic">
+              STATISTIK DESKRIPTIF
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/rena/180411100005" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    rena/180411100005
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="IDENTITAS DIRI" class="md-tabs__link md-tabs__link--active">
+        IDENTITAS DIRI
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://rena.github.io/rena/180411100005" title="Penambangan Data" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Penambangan Data
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/rena/180411100005" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    rena/180411100005
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="IDENTITAS DIRI" class="md-nav__link">
+      IDENTITAS DIRI
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        STATISTIK DESKRIPTIF
+      </label>
+    
+    <a href="./" title="STATISTIK DESKRIPTIF" class="md-nav__link md-nav__link--active">
+      STATISTIK DESKRIPTIF
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#statistik-deskriptif" title="Statistik Deskriptif" class="md-nav__link">
+    Statistik Deskriptif
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source-code" title="Source Code" class="md-nav__link">
+    Source Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../specimen/" title="MENGUKUR JARAK DATA" class="md-nav__link">
+      MENGUKUR JARAK DATA
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="LINEAR REGRESSION" class="md-nav__link">
+      LINEAR REGRESSION
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#statistik-deskriptif" title="Statistik Deskriptif" class="md-nav__link">
+    Statistik Deskriptif
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source-code" title="Source Code" class="md-nav__link">
+    Source Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>STATISTIK DESKRIPTIF</h1>
+                
+                <h2 id="statistik-deskriptif">Statistik Deskriptif<a class="headerlink" href="#statistik-deskriptif" title="Permanent link">&para;</a></h2>
+<p>​   Statistik deskriptif adalah metode yang berkaitan dengan pengumpulan dan penyajian data. Berikut akan dijelaskan macam-macam metode dalam statistik deskriptif.</p>
+<p><strong>1.Rata-rata</strong></p>
+<p>​   Rata-Rata (mean) ini didapat dengan menjumlahkan data seluruh data dalam kelompok yang kemudian dibagi dengan jumlah data yang ada pada kelompok tersebut.</p>
+<p>Rumus :
+$$
+\overline{x}=\frac{\sum_{i=1}^{N} x_{i}}{N}=\frac{x_{1}+x_{2}+\cdots+x_{N}}{N}
+$$
+Keterangan :</p>
+<p>N = banyak data</p>
+<p>xi  = jumlah data</p>
+<p><strong>2.Median</strong></p>
+<p>​   Median adalah <em>nilai tengah</em> dari suatu data yang angkanya sudah diurutkan baik dari yang terbesar maupun dari yang terkecil.</p>
+<p>Berikut adalah rumus untuk mencari median data genap.
+$$
+M e=x_{i j}+\left(\frac{\frac{n}{2}-f_{k i j}}{f_{i}}\right) p
+$$
+​   Berikut adalah rumus untuk mencari median data ganjil.
+$$
+M e = x_{\frac{1}{2}(n+1)}
+$$
+Keterangan :</p>
+<p>Me= median</p>
+<p>xij= batas bawah median </p>
+<p>n= jumlah data </p>
+<p>fkij= frekuensi kumulatif data di bawah kelas median </p>
+<p>fi= frekuensi data pada kelas median </p>
+<p>p= panjang interval kelas </p>
+<p><strong>3.Modus</strong></p>
+<p>​   Modus adalah nilai yang paling banyak muncul pada data. Berbeda dengan median, penentuan modus tidak perlu melakukan pengurutan terhadap kelompok data, melainkan cukup menggunakan pengamatan terhadap data yang paling sering muncul dalam kelompok.</p>
+<p>Rumus modus untuk data kelompok :
+$$
+Mo= L+\mathit{i}\frac{d1}{d1+d2}
+$$
+Keterangan :</p>
+<p>Mo : modus
+Tb : tepi bawah kelas modus
+p : panjang kelas
+d1 : selisih frekuensi kelas modus dengan kelas sebelumnya
+d2 : selisih frekuensi kelas modus dengan kelas sesudahnya</p>
+<p><strong>4.Standar Deviasi</strong></p>
+<p>​   Standar deviasi adalah nilai yang digunakan untuk menentukan sebaran data dalam sampel, serta seberapa dekat titik data individu ke rata-rata nilai sampel. Berikut adalah rumus menghitung standar deviasi.
+$$
+\sigma^{2}= \frac{n\sum i^{2}-(\sum i)^2}{n(n-1)}
+$$
+Keterangan :</p>
+<p>Σ : Epsilon</p>
+<p>xi : nilai x ke-i sampai ke-n</p>
+<p>n : ukuran sampel</p>
+<p><strong>5.Varian</strong></p>
+<p>​   Varian adalah ukuran seberapa jauh sebuah kumpulan bilangan tersebar pada data. Varians yang rendah menandakan data yang berkelompok dekat satu sama lain. Varians yang tinggi menandakan data yang lebih tersebar. Konsep ini memiliki banyak kegunaan di dalam statistik. Misalnya, membandingkan varians dari dua kelompok data (seperti hasil dari pasien laki-laki dan perempuan) adalah salah satu cara untuk menguji apakah sebuah variabel memiliki efek yang dapat diamati.</p>
+<p>Rumus :
+$$
+\sigma^{2}= \left (\frac{n\sum i^{2}-(\sum i)^2}{n(n-1)} \right )^\frac{1}{2}
+$$
+Keterangan :</p>
+<p>Σ : Epsilon</p>
+<p>xi : nilai x ke-i sampai ke-n</p>
+<p>n : ukuran sampel</p>
+<p><strong>6.Skewness</strong></p>
+<p>​   Skewness adalah merupakan ukuran kemiringan suatu kurva. Jika kurva frekuensi suatu distribusi memiliki ekor yang lebih memanjang ke kanan (dilihat dari meannya) maka dikatakan menceng kanan (positif) dan jika sebaliknya maka menceng kiri (negatif).</p>
+<p>Rumus :
+$$
+sk = \frac{(mean-modus)}{s}
+$$
+Keterangan :</p>
+<p>sk = skewness</p>
+<p>s = standar deviasi</p>
+<p><strong>7.Kuartil</strong></p>
+<p>​   Kuartil adalah nilai yang membagi data menjadi empat bagian yang nilainya sama besar yang telah diurutkan. Ada tiga jenis kuartil yaitu, kuartil bawah (Q1), kuartil tengah (Q2) dan kuartil atas (Q3).</p>
+<p>Rumus :
+$$
+Q\mathit{i} = x\tfrac{\mathit{i}}{4}(n+1)
+$$
+Keterangan :</p>
+<p>Qi = quartil ke-i</p>
+<p>n = banyak data</p>
+<h3 id="source-code">Source Code<a class="headerlink" href="#source-code" title="Permanent link">&para;</a></h3>
+<p>Berikut adalah code untuk menampilkan data :</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;tugasdmrena.csv&quot;</span><span class="p">,</span><span class="n">delimiter</span><span class="o">=</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+<span class="n">cm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">light_palette</span><span class="p">(</span><span class="s2">&quot;gold&quot;</span><span class="p">,</span> <span class="n">as_cmap</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">background_gradient</span><span class="p">(</span><span class="n">cmap</span><span class="o">=</span><span class="n">cm</span><span class="p">)</span>
+</pre></div>
+
+<p>Output tabel data pada excel dari 1-500 :</p>
+<table>
+<thead>
+<tr>
+<th>Data 1</th>
+<th>Data 2</th>
+<th>Data 3</th>
+<th>Data 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>55</td>
+<td>68</td>
+<td>40</td>
+<td>47</td>
+</tr>
+<tr>
+<td>52</td>
+<td>44</td>
+<td>54</td>
+<td>50</td>
+</tr>
+<tr>
+<td>41</td>
+<td>56</td>
+<td>41</td>
+<td>62</td>
+</tr>
+<tr>
+<td>45</td>
+<td>51</td>
+<td>52</td>
+<td>54</td>
+</tr>
+<tr>
+<td>43</td>
+<td>45</td>
+<td>44</td>
+<td>40</td>
+</tr>
+<tr>
+<td>41</td>
+<td>66</td>
+<td>58</td>
+<td>54</td>
+</tr>
+<tr>
+<td>42</td>
+<td>62</td>
+<td>45</td>
+<td>61</td>
+</tr>
+<tr>
+<td>59</td>
+<td>40</td>
+<td>68</td>
+<td>56</td>
+</tr>
+<tr>
+<td>42</td>
+<td>50</td>
+<td>43</td>
+<td>63</td>
+</tr>
+<tr>
+<td>55</td>
+<td>41</td>
+<td>59</td>
+<td>56</td>
+</tr>
+<tr>
+<td>58</td>
+<td>41</td>
+<td>66</td>
+<td>47</td>
+</tr>
+<tr>
+<td>61</td>
+<td>65</td>
+<td>45</td>
+<td>57</td>
+</tr>
+<tr>
+<td>58</td>
+<td>62</td>
+<td>48</td>
+<td>70</td>
+</tr>
+<tr>
+<td>61</td>
+<td>44</td>
+<td>45</td>
+<td>49</td>
+</tr>
+<tr>
+<td>58</td>
+<td>66</td>
+<td>51</td>
+<td>40</td>
+</tr>
+<tr>
+<td>70</td>
+<td>55</td>
+<td>53</td>
+<td>47</td>
+</tr>
+<tr>
+<td>65</td>
+<td>58</td>
+<td>58</td>
+<td>48</td>
+</tr>
+<tr>
+<td>61</td>
+<td>57</td>
+<td>42</td>
+<td>47</td>
+</tr>
+<tr>
+<td>67</td>
+<td>60</td>
+<td>47</td>
+<td>58</td>
+</tr>
+<tr>
+<td>40</td>
+<td>44</td>
+<td>68</td>
+<td>58</td>
+</tr>
+<tr>
+<td>54</td>
+<td>58</td>
+<td>50</td>
+<td>57</td>
+</tr>
+<tr>
+<td>56</td>
+<td>45</td>
+<td>50</td>
+<td>70</td>
+</tr>
+<tr>
+<td>47</td>
+<td>50</td>
+<td>70</td>
+<td>48</td>
+</tr>
+<tr>
+<td>65</td>
+<td>64</td>
+<td>40</td>
+<td>70</td>
+</tr>
+<tr>
+<td>55</td>
+<td>51</td>
+<td>53</td>
+<td>67</td>
+</tr>
+<tr>
+<td>69</td>
+<td>68</td>
+<td>58</td>
+<td>56</td>
+</tr>
+<tr>
+<td>57</td>
+<td>48</td>
+<td>57</td>
+<td>60</td>
+</tr>
+<tr>
+<td>65</td>
+<td>58</td>
+<td>52</td>
+<td>41</td>
+</tr>
+<tr>
+<td>59</td>
+<td>51</td>
+<td>54</td>
+<td>40</td>
+</tr>
+<tr>
+<td>66</td>
+<td>54</td>
+<td>62</td>
+<td>46</td>
+</tr>
+<tr>
+<td>63</td>
+<td>43</td>
+<td>66</td>
+<td>52</td>
+</tr>
+<tr>
+<td>68</td>
+<td>60</td>
+<td>48</td>
+<td>61</td>
+</tr>
+<tr>
+<td>51</td>
+<td>48</td>
+<td>67</td>
+<td>42</td>
+</tr>
+<tr>
+<td>56</td>
+<td>61</td>
+<td>64</td>
+<td>40</td>
+</tr>
+<tr>
+<td>55</td>
+<td>59</td>
+<td>68</td>
+<td>51</td>
+</tr>
+<tr>
+<td>55</td>
+<td>51</td>
+<td>65</td>
+<td>59</td>
+</tr>
+<tr>
+<td>46</td>
+<td>43</td>
+<td>50</td>
+<td>60</td>
+</tr>
+<tr>
+<td>55</td>
+<td>61</td>
+<td>57</td>
+<td>53</td>
+</tr>
+<tr>
+<td>42</td>
+<td>43</td>
+<td>47</td>
+<td>52</td>
+</tr>
+<tr>
+<td>63</td>
+<td>51</td>
+<td>58</td>
+<td>59</td>
+</tr>
+<tr>
+<td>62</td>
+<td>65</td>
+<td>54</td>
+<td>62</td>
+</tr>
+<tr>
+<td>55</td>
+<td>62</td>
+<td>60</td>
+<td>55</td>
+</tr>
+<tr>
+<td>69</td>
+<td>41</td>
+<td>59</td>
+<td>67</td>
+</tr>
+<tr>
+<td>51</td>
+<td>46</td>
+<td>53</td>
+<td>60</td>
+</tr>
+<tr>
+<td>70</td>
+<td>60</td>
+<td>46</td>
+<td>49</td>
+</tr>
+<tr>
+<td>66</td>
+<td>66</td>
+<td>48</td>
+<td>54</td>
+</tr>
+<tr>
+<td>44</td>
+<td>47</td>
+<td>67</td>
+<td>64</td>
+</tr>
+<tr>
+<td>45</td>
+<td>49</td>
+<td>61</td>
+<td>49</td>
+</tr>
+<tr>
+<td>63</td>
+<td>56</td>
+<td>62</td>
+<td>55</td>
+</tr>
+<tr>
+<td>61</td>
+<td>48</td>
+<td>54</td>
+<td>70</td>
+</tr>
+<tr>
+<td>56</td>
+<td>66</td>
+<td>56</td>
+<td>43</td>
+</tr>
+<tr>
+<td>63</td>
+<td>44</td>
+<td>65</td>
+<td>41</td>
+</tr>
+<tr>
+<td>51</td>
+<td>40</td>
+<td>45</td>
+<td>66</td>
+</tr>
+<tr>
+<td>67</td>
+<td>50</td>
+<td>57</td>
+<td>69</td>
+</tr>
+<tr>
+<td>47</td>
+<td>69</td>
+<td>47</td>
+<td>57</td>
+</tr>
+<tr>
+<td>53</td>
+<td>68</td>
+<td>52</td>
+<td>64</td>
+</tr>
+<tr>
+<td>68</td>
+<td>52</td>
+<td>59</td>
+<td>67</td>
+</tr>
+<tr>
+<td>53</td>
+<td>61</td>
+<td>66</td>
+<td>70</td>
+</tr>
+<tr>
+<td>43</td>
+<td>50</td>
+<td>70</td>
+<td>54</td>
+</tr>
+<tr>
+<td>52</td>
+<td>56</td>
+<td>51</td>
+<td>56</td>
+</tr>
+<tr>
+<td>55</td>
+<td>52</td>
+<td>46</td>
+<td>70</td>
+</tr>
+<tr>
+<td>40</td>
+<td>66</td>
+<td>68</td>
+<td>65</td>
+</tr>
+<tr>
+<td>56</td>
+<td>70</td>
+<td>65</td>
+<td>45</td>
+</tr>
+<tr>
+<td>70</td>
+<td>50</td>
+<td>62</td>
+<td>41</td>
+</tr>
+<tr>
+<td>70</td>
+<td>44</td>
+<td>48</td>
+<td>48</td>
+</tr>
+<tr>
+<td>59</td>
+<td>54</td>
+<td>51</td>
+<td>44</td>
+</tr>
+<tr>
+<td>50</td>
+<td>61</td>
+<td>40</td>
+<td>62</td>
+</tr>
+<tr>
+<td>45</td>
+<td>50</td>
+<td>56</td>
+<td>69</td>
+</tr>
+<tr>
+<td>47</td>
+<td>69</td>
+<td>67</td>
+<td>44</td>
+</tr>
+<tr>
+<td>70</td>
+<td>42</td>
+<td>44</td>
+<td>46</td>
+</tr>
+<tr>
+<td>40</td>
+<td>64</td>
+<td>49</td>
+<td>62</td>
+</tr>
+<tr>
+<td>53</td>
+<td>60</td>
+<td>56</td>
+<td>59</td>
+</tr>
+<tr>
+<td>56</td>
+<td>56</td>
+<td>48</td>
+<td>57</td>
+</tr>
+<tr>
+<td>43</td>
+<td>60</td>
+<td>50</td>
+<td>50</td>
+</tr>
+<tr>
+<td>61</td>
+<td>48</td>
+<td>63</td>
+<td>59</td>
+</tr>
+<tr>
+<td>52</td>
+<td>61</td>
+<td>46</td>
+<td>69</td>
+</tr>
+<tr>
+<td>50</td>
+<td>45</td>
+<td>58</td>
+<td>66</td>
+</tr>
+<tr>
+<td>57</td>
+<td>50</td>
+<td>69</td>
+<td>50</td>
+</tr>
+<tr>
+<td>68</td>
+<td>40</td>
+<td>60</td>
+<td>69</td>
+</tr>
+<tr>
+<td>69</td>
+<td>69</td>
+<td>66</td>
+<td>49</td>
+</tr>
+<tr>
+<td>68</td>
+<td>66</td>
+<td>60</td>
+<td>60</td>
+</tr>
+<tr>
+<td>57</td>
+<td>44</td>
+<td>63</td>
+<td>66</td>
+</tr>
+<tr>
+<td>62</td>
+<td>67</td>
+<td>58</td>
+<td>44</td>
+</tr>
+<tr>
+<td>45</td>
+<td>63</td>
+<td>58</td>
+<td>59</td>
+</tr>
+<tr>
+<td>56</td>
+<td>54</td>
+<td>47</td>
+<td>69</td>
+</tr>
+<tr>
+<td>45</td>
+<td>49</td>
+<td>66</td>
+<td>57</td>
+</tr>
+<tr>
+<td>45</td>
+<td>70</td>
+<td>66</td>
+<td>56</td>
+</tr>
+<tr>
+<td>43</td>
+<td>59</td>
+<td>41</td>
+<td>54</td>
+</tr>
+<tr>
+<td>58</td>
+<td>41</td>
+<td>57</td>
+<td>61</td>
+</tr>
+<tr>
+<td>63</td>
+<td>57</td>
+<td>51</td>
+<td>46</td>
+</tr>
+<tr>
+<td>62</td>
+<td>66</td>
+<td>57</td>
+<td>53</td>
+</tr>
+<tr>
+<td>55</td>
+<td>51</td>
+<td>44</td>
+<td>59</td>
+</tr>
+<tr>
+<td>44</td>
+<td>40</td>
+<td>44</td>
+<td>58</td>
+</tr>
+<tr>
+<td>61</td>
+<td>41</td>
+<td>53</td>
+<td>42</td>
+</tr>
+<tr>
+<td>42</td>
+<td>44</td>
+<td>46</td>
+<td>49</td>
+</tr>
+<tr>
+<td>68</td>
+<td>64</td>
+<td>42</td>
+<td>49</td>
+</tr>
+<tr>
+<td>50</td>
+<td>58</td>
+<td>60</td>
+<td>40</td>
+</tr>
+<tr>
+<td>50</td>
+<td>69</td>
+<td>52</td>
+<td>54</td>
+</tr>
+<tr>
+<td>45</td>
+<td>59</td>
+<td>48</td>
+<td>46</td>
+</tr>
+<tr>
+<td>67</td>
+<td>40</td>
+<td>69</td>
+<td>47</td>
+</tr>
+<tr>
+<td>46</td>
+<td>43</td>
+<td>48</td>
+<td>40</td>
+</tr>
+<tr>
+<td>58</td>
+<td>42</td>
+<td>52</td>
+<td>64</td>
+</tr>
+<tr>
+<td>42</td>
+<td>54</td>
+<td>40</td>
+<td>63</td>
+</tr>
+<tr>
+<td>41</td>
+<td>65</td>
+<td>59</td>
+<td>66</td>
+</tr>
+<tr>
+<td>43</td>
+<td>43</td>
+<td>68</td>
+<td>66</td>
+</tr>
+<tr>
+<td>53</td>
+<td>45</td>
+<td>63</td>
+<td>58</td>
+</tr>
+<tr>
+<td>65</td>
+<td>41</td>
+<td>44</td>
+<td>58</td>
+</tr>
+<tr>
+<td>69</td>
+<td>68</td>
+<td>40</td>
+<td>65</td>
+</tr>
+<tr>
+<td>63</td>
+<td>70</td>
+<td>47</td>
+<td>50</td>
+</tr>
+<tr>
+<td>62</td>
+<td>52</td>
+<td>59</td>
+<td>60</td>
+</tr>
+<tr>
+<td>51</td>
+<td>40</td>
+<td>61</td>
+<td>42</td>
+</tr>
+<tr>
+<td>45</td>
+<td>70</td>
+<td>50</td>
+<td>52</td>
+</tr>
+<tr>
+<td>46</td>
+<td>60</td>
+<td>64</td>
+<td>55</td>
+</tr>
+<tr>
+<td>44</td>
+<td>54</td>
+<td>45</td>
+<td>50</td>
+</tr>
+<tr>
+<td>58</td>
+<td>59</td>
+<td>70</td>
+<td>67</td>
+</tr>
+<tr>
+<td>54</td>
+<td>50</td>
+<td>41</td>
+<td>48</td>
+</tr>
+<tr>
+<td>54</td>
+<td>47</td>
+<td>68</td>
+<td>50</td>
+</tr>
+<tr>
+<td>65</td>
+<td>40</td>
+<td>61</td>
+<td>65</td>
+</tr>
+<tr>
+<td>48</td>
+<td>53</td>
+<td>48</td>
+<td>70</td>
+</tr>
+<tr>
+<td>52</td>
+<td>42</td>
+<td>59</td>
+<td>41</td>
+</tr>
+<tr>
+<td>61</td>
+<td>63</td>
+<td>51</td>
+<td>56</td>
+</tr>
+<tr>
+<td>53</td>
+<td>43</td>
+<td>47</td>
+<td>47</td>
+</tr>
+<tr>
+<td>50</td>
+<td>51</td>
+<td>44</td>
+<td>67</td>
+</tr>
+<tr>
+<td>45</td>
+<td>43</td>
+<td>63</td>
+<td>46</td>
+</tr>
+<tr>
+<td>49</td>
+<td>68</td>
+<td>57</td>
+<td>64</td>
+</tr>
+<tr>
+<td>45</td>
+<td>54</td>
+<td>55</td>
+<td>52</td>
+</tr>
+<tr>
+<td>45</td>
+<td>70</td>
+<td>41</td>
+<td>49</td>
+</tr>
+<tr>
+<td>65</td>
+<td>59</td>
+<td>46</td>
+<td>44</td>
+</tr>
+<tr>
+<td>53</td>
+<td>60</td>
+<td>70</td>
+<td>59</td>
+</tr>
+<tr>
+<td>42</td>
+<td>61</td>
+<td>57</td>
+<td>58</td>
+</tr>
+<tr>
+<td>43</td>
+<td>63</td>
+<td>50</td>
+<td>52</td>
+</tr>
+<tr>
+<td>40</td>
+<td>40</td>
+<td>40</td>
+<td>41</td>
+</tr>
+<tr>
+<td>70</td>
+<td>44</td>
+<td>44</td>
+<td>65</td>
+</tr>
+<tr>
+<td>66</td>
+<td>68</td>
+<td>46</td>
+<td>56</td>
+</tr>
+<tr>
+<td>60</td>
+<td>51</td>
+<td>60</td>
+<td>40</td>
+</tr>
+<tr>
+<td>67</td>
+<td>64</td>
+<td>43</td>
+<td>50</td>
+</tr>
+<tr>
+<td>63</td>
+<td>66</td>
+<td>65</td>
+<td>56</td>
+</tr>
+<tr>
+<td>66</td>
+<td>50</td>
+<td>59</td>
+<td>51</td>
+</tr>
+<tr>
+<td>49</td>
+<td>62</td>
+<td>61</td>
+<td>58</td>
+</tr>
+<tr>
+<td>65</td>
+<td>44</td>
+<td>44</td>
+<td>67</td>
+</tr>
+<tr>
+<td>45</td>
+<td>60</td>
+<td>44</td>
+<td>60</td>
+</tr>
+<tr>
+<td>54</td>
+<td>55</td>
+<td>51</td>
+<td>58</td>
+</tr>
+<tr>
+<td>40</td>
+<td>49</td>
+<td>69</td>
+<td>51</td>
+</tr>
+<tr>
+<td>50</td>
+<td>62</td>
+<td>65</td>
+<td>53</td>
+</tr>
+<tr>
+<td>67</td>
+<td>60</td>
+<td>52</td>
+<td>58</td>
+</tr>
+<tr>
+<td>46</td>
+<td>54</td>
+<td>44</td>
+<td>56</td>
+</tr>
+<tr>
+<td>52</td>
+<td>45</td>
+<td>62</td>
+<td>41</td>
+</tr>
+<tr>
+<td>51</td>
+<td>61</td>
+<td>64</td>
+<td>45</td>
+</tr>
+<tr>
+<td>48</td>
+<td>53</td>
+<td>65</td>
+<td>44</td>
+</tr>
+<tr>
+<td>40</td>
+<td>46</td>
+<td>48</td>
+<td>60</td>
+</tr>
+<tr>
+<td>57</td>
+<td>40</td>
+<td>42</td>
+<td>50</td>
+</tr>
+<tr>
+<td>53</td>
+<td>63</td>
+<td>65</td>
+<td>69</td>
+</tr>
+<tr>
+<td>52</td>
+<td>64</td>
+<td>51</td>
+<td>54</td>
+</tr>
+<tr>
+<td>57</td>
+<td>51</td>
+<td>44</td>
+<td>53</td>
+</tr>
+<tr>
+<td>50</td>
+<td>46</td>
+<td>66</td>
+<td>64</td>
+</tr>
+<tr>
+<td>64</td>
+<td>65</td>
+<td>43</td>
+<td>63</td>
+</tr>
+<tr>
+<td>42</td>
+<td>70</td>
+<td>48</td>
+<td>47</td>
+</tr>
+<tr>
+<td>61</td>
+<td>46</td>
+<td>60</td>
+<td>65</td>
+</tr>
+<tr>
+<td>65</td>
+<td>42</td>
+<td>58</td>
+<td>67</td>
+</tr>
+<tr>
+<td>62</td>
+<td>60</td>
+<td>62</td>
+<td>70</td>
+</tr>
+<tr>
+<td>66</td>
+<td>58</td>
+<td>67</td>
+<td>51</td>
+</tr>
+<tr>
+<td>61</td>
+<td>53</td>
+<td>45</td>
+<td>64</td>
+</tr>
+<tr>
+<td>58</td>
+<td>45</td>
+<td>58</td>
+<td>59</td>
+</tr>
+<tr>
+<td>61</td>
+<td>58</td>
+<td>47</td>
+<td>64</td>
+</tr>
+<tr>
+<td>65</td>
+<td>70</td>
+<td>61</td>
+<td>65</td>
+</tr>
+<tr>
+<td>46</td>
+<td>43</td>
+<td>42</td>
+<td>47</td>
+</tr>
+<tr>
+<td>70</td>
+<td>67</td>
+<td>51</td>
+<td>64</td>
+</tr>
+<tr>
+<td>68</td>
+<td>48</td>
+<td>43</td>
+<td>69</td>
+</tr>
+<tr>
+<td>43</td>
+<td>69</td>
+<td>46</td>
+<td>57</td>
+</tr>
+<tr>
+<td>45</td>
+<td>57</td>
+<td>50</td>
+<td>41</td>
+</tr>
+<tr>
+<td>42</td>
+<td>44</td>
+<td>58</td>
+<td>61</td>
+</tr>
+<tr>
+<td>49</td>
+<td>54</td>
+<td>48</td>
+<td>40</td>
+</tr>
+<tr>
+<td>50</td>
+<td>47</td>
+<td>45</td>
+<td>58</td>
+</tr>
+<tr>
+<td>56</td>
+<td>50</td>
+<td>70</td>
+<td>60</td>
+</tr>
+<tr>
+<td>48</td>
+<td>53</td>
+<td>50</td>
+<td>61</td>
+</tr>
+<tr>
+<td>48</td>
+<td>67</td>
+<td>48</td>
+<td>63</td>
+</tr>
+<tr>
+<td>56</td>
+<td>58</td>
+<td>64</td>
+<td>51</td>
+</tr>
+<tr>
+<td>55</td>
+<td>42</td>
+<td>48</td>
+<td>54</td>
+</tr>
+<tr>
+<td>46</td>
+<td>45</td>
+<td>44</td>
+<td>43</td>
+</tr>
+<tr>
+<td>69</td>
+<td>43</td>
+<td>69</td>
+<td>63</td>
+</tr>
+<tr>
+<td>67</td>
+<td>67</td>
+<td>57</td>
+<td>50</td>
+</tr>
+<tr>
+<td>62</td>
+<td>62</td>
+<td>59</td>
+<td>53</td>
+</tr>
+<tr>
+<td>45</td>
+<td>59</td>
+<td>60</td>
+<td>70</td>
+</tr>
+<tr>
+<td>43</td>
+<td>70</td>
+<td>67</td>
+<td>47</td>
+</tr>
+<tr>
+<td>52</td>
+<td>63</td>
+<td>55</td>
+<td>47</td>
+</tr>
+<tr>
+<td>54</td>
+<td>59</td>
+<td>48</td>
+<td>42</td>
+</tr>
+<tr>
+<td>58</td>
+<td>63</td>
+<td>69</td>
+<td>61</td>
+</tr>
+<tr>
+<td>51</td>
+<td>55</td>
+<td>53</td>
+<td>48</td>
+</tr>
+<tr>
+<td>43</td>
+<td>51</td>
+<td>47</td>
+<td>43</td>
+</tr>
+<tr>
+<td>51</td>
+<td>64</td>
+<td>43</td>
+<td>43</td>
+</tr>
+<tr>
+<td>63</td>
+<td>57</td>
+<td>57</td>
+<td>47</td>
+</tr>
+<tr>
+<td>63</td>
+<td>65</td>
+<td>42</td>
+<td>66</td>
+</tr>
+<tr>
+<td>64</td>
+<td>55</td>
+<td>65</td>
+<td>62</td>
+</tr>
+<tr>
+<td>68</td>
+<td>49</td>
+<td>62</td>
+<td>42</td>
+</tr>
+<tr>
+<td>58</td>
+<td>53</td>
+<td>47</td>
+<td>60</td>
+</tr>
+<tr>
+<td>62</td>
+<td>58</td>
+<td>61</td>
+<td>70</td>
+</tr>
+<tr>
+<td>42</td>
+<td>41</td>
+<td>60</td>
+<td>46</td>
+</tr>
+<tr>
+<td>63</td>
+<td>50</td>
+<td>47</td>
+<td>45</td>
+</tr>
+<tr>
+<td>52</td>
+<td>45</td>
+<td>61</td>
+<td>55</td>
+</tr>
+<tr>
+<td>47</td>
+<td>68</td>
+<td>56</td>
+<td>51</td>
+</tr>
+<tr>
+<td>68</td>
+<td>49</td>
+<td>68</td>
+<td>63</td>
+</tr>
+<tr>
+<td>45</td>
+<td>65</td>
+<td>58</td>
+<td>50</td>
+</tr>
+<tr>
+<td>46</td>
+<td>68</td>
+<td>42</td>
+<td>46</td>
+</tr>
+<tr>
+<td>61</td>
+<td>66</td>
+<td>48</td>
+<td>60</td>
+</tr>
+<tr>
+<td>62</td>
+<td>70</td>
+<td>61</td>
+<td>40</td>
+</tr>
+<tr>
+<td>47</td>
+<td>55</td>
+<td>46</td>
+<td>68</td>
+</tr>
+<tr>
+<td>70</td>
+<td>50</td>
+<td>45</td>
+<td>55</td>
+</tr>
+<tr>
+<td>45</td>
+<td>50</td>
+<td>57</td>
+<td>56</td>
+</tr>
+<tr>
+<td>60</td>
+<td>56</td>
+<td>68</td>
+<td>50</td>
+</tr>
+<tr>
+<td>56</td>
+<td>60</td>
+<td>68</td>
+<td>42</td>
+</tr>
+<tr>
+<td>66</td>
+<td>40</td>
+<td>70</td>
+<td>64</td>
+</tr>
+<tr>
+<td>52</td>
+<td>60</td>
+<td>43</td>
+<td>57</td>
+</tr>
+<tr>
+<td>61</td>
+<td>65</td>
+<td>41</td>
+<td>59</td>
+</tr>
+<tr>
+<td>41</td>
+<td>43</td>
+<td>45</td>
+<td>59</td>
+</tr>
+<tr>
+<td>47</td>
+<td>67</td>
+<td>55</td>
+<td>66</td>
+</tr>
+<tr>
+<td>67</td>
+<td>61</td>
+<td>64</td>
+<td>67</td>
+</tr>
+<tr>
+<td>45</td>
+<td>68</td>
+<td>68</td>
+<td>46</td>
+</tr>
+<tr>
+<td>45</td>
+<td>45</td>
+<td>69</td>
+<td>53</td>
+</tr>
+<tr>
+<td>42</td>
+<td>56</td>
+<td>56</td>
+<td>45</td>
+</tr>
+<tr>
+<td>63</td>
+<td>70</td>
+<td>45</td>
+<td>68</td>
+</tr>
+<tr>
+<td>58</td>
+<td>43</td>
+<td>42</td>
+<td>64</td>
+</tr>
+<tr>
+<td>64</td>
+<td>57</td>
+<td>68</td>
+<td>50</td>
+</tr>
+<tr>
+<td>66</td>
+<td>57</td>
+<td>51</td>
+<td>69</td>
+</tr>
+<tr>
+<td>49</td>
+<td>48</td>
+<td>65</td>
+<td>69</td>
+</tr>
+<tr>
+<td>67</td>
+<td>42</td>
+<td>53</td>
+<td>63</td>
+</tr>
+<tr>
+<td>58</td>
+<td>54</td>
+<td>51</td>
+<td>42</td>
+</tr>
+<tr>
+<td>61</td>
+<td>47</td>
+<td>59</td>
+<td>65</td>
+</tr>
+<tr>
+<td>56</td>
+<td>52</td>
+<td>70</td>
+<td>69</td>
+</tr>
+<tr>
+<td>44</td>
+<td>64</td>
+<td>50</td>
+<td>67</td>
+</tr>
+<tr>
+<td>44</td>
+<td>50</td>
+<td>54</td>
+<td>68</td>
+</tr>
+<tr>
+<td>42</td>
+<td>57</td>
+<td>41</td>
+<td>49</td>
+</tr>
+<tr>
+<td>45</td>
+<td>62</td>
+<td>52</td>
+<td>64</td>
+</tr>
+<tr>
+<td>40</td>
+<td>67</td>
+<td>70</td>
+<td>70</td>
+</tr>
+<tr>
+<td>51</td>
+<td>46</td>
+<td>40</td>
+<td>44</td>
+</tr>
+<tr>
+<td>57</td>
+<td>44</td>
+<td>65</td>
+<td>59</td>
+</tr>
+<tr>
+<td>64</td>
+<td>40</td>
+<td>44</td>
+<td>54</td>
+</tr>
+<tr>
+<td>68</td>
+<td>61</td>
+<td>45</td>
+<td>61</td>
+</tr>
+<tr>
+<td>60</td>
+<td>45</td>
+<td>41</td>
+<td>41</td>
+</tr>
+<tr>
+<td>50</td>
+<td>69</td>
+<td>42</td>
+<td>51</td>
+</tr>
+<tr>
+<td>70</td>
+<td>47</td>
+<td>53</td>
+<td>46</td>
+</tr>
+<tr>
+<td>65</td>
+<td>56</td>
+<td>60</td>
+<td>54</td>
+</tr>
+<tr>
+<td>47</td>
+<td>52</td>
+<td>46</td>
+<td>49</td>
+</tr>
+<tr>
+<td>47</td>
+<td>55</td>
+<td>70</td>
+<td>67</td>
+</tr>
+<tr>
+<td>59</td>
+<td>40</td>
+<td>61</td>
+<td>51</td>
+</tr>
+<tr>
+<td>46</td>
+<td>60</td>
+<td>47</td>
+<td>46</td>
+</tr>
+<tr>
+<td>45</td>
+<td>52</td>
+<td>53</td>
+<td>53</td>
+</tr>
+<tr>
+<td>52</td>
+<td>65</td>
+<td>56</td>
+<td>70</td>
+</tr>
+<tr>
+<td>58</td>
+<td>65</td>
+<td>58</td>
+<td>49</td>
+</tr>
+<tr>
+<td>48</td>
+<td>59</td>
+<td>50</td>
+<td>62</td>
+</tr>
+<tr>
+<td>45</td>
+<td>40</td>
+<td>54</td>
+<td>66</td>
+</tr>
+<tr>
+<td>42</td>
+<td>40</td>
+<td>51</td>
+<td>56</td>
+</tr>
+<tr>
+<td>68</td>
+<td>63</td>
+<td>68</td>
+<td>49</td>
+</tr>
+<tr>
+<td>47</td>
+<td>65</td>
+<td>43</td>
+<td>48</td>
+</tr>
+<tr>
+<td>66</td>
+<td>65</td>
+<td>56</td>
+<td>63</td>
+</tr>
+<tr>
+<td>66</td>
+<td>46</td>
+<td>62</td>
+<td>68</td>
+</tr>
+<tr>
+<td>42</td>
+<td>51</td>
+<td>44</td>
+<td>49</td>
+</tr>
+<tr>
+<td>64</td>
+<td>70</td>
+<td>64</td>
+<td>47</td>
+</tr>
+<tr>
+<td>70</td>
+<td>64</td>
+<td>62</td>
+<td>46</td>
+</tr>
+<tr>
+<td>56</td>
+<td>49</td>
+<td>69</td>
+<td>59</td>
+</tr>
+<tr>
+<td>58</td>
+<td>66</td>
+<td>43</td>
+<td>60</td>
+</tr>
+<tr>
+<td>44</td>
+<td>43</td>
+<td>57</td>
+<td>45</td>
+</tr>
+<tr>
+<td>44</td>
+<td>48</td>
+<td>70</td>
+<td>41</td>
+</tr>
+<tr>
+<td>69</td>
+<td>59</td>
+<td>62</td>
+<td>68</td>
+</tr>
+<tr>
+<td>51</td>
+<td>70</td>
+<td>47</td>
+<td>64</td>
+</tr>
+<tr>
+<td>54</td>
+<td>60</td>
+<td>43</td>
+<td>41</td>
+</tr>
+<tr>
+<td>67</td>
+<td>69</td>
+<td>58</td>
+<td>55</td>
+</tr>
+<tr>
+<td>64</td>
+<td>62</td>
+<td>59</td>
+<td>67</td>
+</tr>
+<tr>
+<td>41</td>
+<td>54</td>
+<td>58</td>
+<td>40</td>
+</tr>
+<tr>
+<td>43</td>
+<td>65</td>
+<td>68</td>
+<td>59</td>
+</tr>
+<tr>
+<td>52</td>
+<td>44</td>
+<td>62</td>
+<td>68</td>
+</tr>
+<tr>
+<td>61</td>
+<td>70</td>
+<td>47</td>
+<td>43</td>
+</tr>
+<tr>
+<td>60</td>
+<td>65</td>
+<td>55</td>
+<td>64</td>
+</tr>
+<tr>
+<td>53</td>
+<td>51</td>
+<td>45</td>
+<td>65</td>
+</tr>
+<tr>
+<td>60</td>
+<td>68</td>
+<td>65</td>
+<td>43</td>
+</tr>
+<tr>
+<td>69</td>
+<td>50</td>
+<td>47</td>
+<td>48</td>
+</tr>
+<tr>
+<td>67</td>
+<td>44</td>
+<td>51</td>
+<td>51</td>
+</tr>
+<tr>
+<td>60</td>
+<td>49</td>
+<td>59</td>
+<td>45</td>
+</tr>
+<tr>
+<td>46</td>
+<td>50</td>
+<td>45</td>
+<td>56</td>
+</tr>
+<tr>
+<td>57</td>
+<td>45</td>
+<td>40</td>
+<td>47</td>
+</tr>
+<tr>
+<td>41</td>
+<td>50</td>
+<td>48</td>
+<td>57</td>
+</tr>
+<tr>
+<td>50</td>
+<td>62</td>
+<td>70</td>
+<td>59</td>
+</tr>
+<tr>
+<td>42</td>
+<td>70</td>
+<td>70</td>
+<td>54</td>
+</tr>
+<tr>
+<td>53</td>
+<td>57</td>
+<td>40</td>
+<td>62</td>
+</tr>
+<tr>
+<td>59</td>
+<td>61</td>
+<td>55</td>
+<td>61</td>
+</tr>
+<tr>
+<td>70</td>
+<td>43</td>
+<td>59</td>
+<td>59</td>
+</tr>
+<tr>
+<td>56</td>
+<td>43</td>
+<td>59</td>
+<td>61</td>
+</tr>
+<tr>
+<td>61</td>
+<td>69</td>
+<td>56</td>
+<td>54</td>
+</tr>
+<tr>
+<td>64</td>
+<td>66</td>
+<td>64</td>
+<td>48</td>
+</tr>
+<tr>
+<td>45</td>
+<td>58</td>
+<td>50</td>
+<td>61</td>
+</tr>
+<tr>
+<td>41</td>
+<td>49</td>
+<td>56</td>
+<td>46</td>
+</tr>
+<tr>
+<td>61</td>
+<td>50</td>
+<td>46</td>
+<td>43</td>
+</tr>
+<tr>
+<td>40</td>
+<td>55</td>
+<td>59</td>
+<td>53</td>
+</tr>
+<tr>
+<td>50</td>
+<td>65</td>
+<td>45</td>
+<td>50</td>
+</tr>
+<tr>
+<td>57</td>
+<td>49</td>
+<td>61</td>
+<td>62</td>
+</tr>
+<tr>
+<td>43</td>
+<td>46</td>
+<td>55</td>
+<td>49</td>
+</tr>
+<tr>
+<td>46</td>
+<td>46</td>
+<td>52</td>
+<td>66</td>
+</tr>
+<tr>
+<td>67</td>
+<td>63</td>
+<td>42</td>
+<td>59</td>
+</tr>
+<tr>
+<td>42</td>
+<td>59</td>
+<td>62</td>
+<td>42</td>
+</tr>
+<tr>
+<td>60</td>
+<td>62</td>
+<td>68</td>
+<td>58</td>
+</tr>
+<tr>
+<td>59</td>
+<td>66</td>
+<td>68</td>
+<td>52</td>
+</tr>
+<tr>
+<td>48</td>
+<td>66</td>
+<td>48</td>
+<td>40</td>
+</tr>
+<tr>
+<td>68</td>
+<td>41</td>
+<td>59</td>
+<td>49</td>
+</tr>
+<tr>
+<td>54</td>
+<td>52</td>
+<td>50</td>
+<td>55</td>
+</tr>
+<tr>
+<td>43</td>
+<td>65</td>
+<td>69</td>
+<td>60</td>
+</tr>
+<tr>
+<td>42</td>
+<td>55</td>
+<td>65</td>
+<td>50</td>
+</tr>
+<tr>
+<td>46</td>
+<td>46</td>
+<td>56</td>
+<td>59</td>
+</tr>
+<tr>
+<td>63</td>
+<td>44</td>
+<td>58</td>
+<td>42</td>
+</tr>
+<tr>
+<td>62</td>
+<td>55</td>
+<td>58</td>
+<td>62</td>
+</tr>
+<tr>
+<td>42</td>
+<td>41</td>
+<td>67</td>
+<td>61</td>
+</tr>
+<tr>
+<td>40</td>
+<td>66</td>
+<td>67</td>
+<td>46</td>
+</tr>
+<tr>
+<td>44</td>
+<td>51</td>
+<td>48</td>
+<td>54</td>
+</tr>
+<tr>
+<td>68</td>
+<td>44</td>
+<td>65</td>
+<td>58</td>
+</tr>
+<tr>
+<td>65</td>
+<td>40</td>
+<td>66</td>
+<td>50</td>
+</tr>
+<tr>
+<td>49</td>
+<td>47</td>
+<td>41</td>
+<td>48</td>
+</tr>
+<tr>
+<td>44</td>
+<td>49</td>
+<td>46</td>
+<td>68</td>
+</tr>
+<tr>
+<td>44</td>
+<td>59</td>
+<td>65</td>
+<td>62</td>
+</tr>
+<tr>
+<td>57</td>
+<td>48</td>
+<td>55</td>
+<td>46</td>
+</tr>
+<tr>
+<td>69</td>
+<td>55</td>
+<td>66</td>
+<td>65</td>
+</tr>
+<tr>
+<td>49</td>
+<td>65</td>
+<td>65</td>
+<td>40</td>
+</tr>
+<tr>
+<td>58</td>
+<td>69</td>
+<td>53</td>
+<td>70</td>
+</tr>
+<tr>
+<td>64</td>
+<td>47</td>
+<td>43</td>
+<td>49</td>
+</tr>
+<tr>
+<td>63</td>
+<td>43</td>
+<td>68</td>
+<td>66</td>
+</tr>
+<tr>
+<td>66</td>
+<td>55</td>
+<td>55</td>
+<td>66</td>
+</tr>
+<tr>
+<td>62</td>
+<td>51</td>
+<td>51</td>
+<td>58</td>
+</tr>
+<tr>
+<td>54</td>
+<td>40</td>
+<td>52</td>
+<td>53</td>
+</tr>
+<tr>
+<td>45</td>
+<td>53</td>
+<td>64</td>
+<td>52</td>
+</tr>
+<tr>
+<td>56</td>
+<td>41</td>
+<td>48</td>
+<td>49</td>
+</tr>
+<tr>
+<td>63</td>
+<td>62</td>
+<td>57</td>
+<td>49</td>
+</tr>
+<tr>
+<td>69</td>
+<td>40</td>
+<td>42</td>
+<td>55</td>
+</tr>
+<tr>
+<td>58</td>
+<td>61</td>
+<td>55</td>
+<td>64</td>
+</tr>
+<tr>
+<td>44</td>
+<td>67</td>
+<td>54</td>
+<td>61</td>
+</tr>
+<tr>
+<td>45</td>
+<td>70</td>
+<td>58</td>
+<td>58</td>
+</tr>
+<tr>
+<td>40</td>
+<td>51</td>
+<td>41</td>
+<td>63</td>
+</tr>
+<tr>
+<td>69</td>
+<td>62</td>
+<td>41</td>
+<td>58</td>
+</tr>
+<tr>
+<td>55</td>
+<td>54</td>
+<td>59</td>
+<td>52</td>
+</tr>
+<tr>
+<td>46</td>
+<td>48</td>
+<td>66</td>
+<td>63</td>
+</tr>
+<tr>
+<td>42</td>
+<td>57</td>
+<td>69</td>
+<td>59</td>
+</tr>
+<tr>
+<td>70</td>
+<td>42</td>
+<td>44</td>
+<td>45</td>
+</tr>
+<tr>
+<td>46</td>
+<td>70</td>
+<td>63</td>
+<td>40</td>
+</tr>
+<tr>
+<td>52</td>
+<td>67</td>
+<td>52</td>
+<td>56</td>
+</tr>
+<tr>
+<td>70</td>
+<td>70</td>
+<td>56</td>
+<td>65</td>
+</tr>
+<tr>
+<td>66</td>
+<td>56</td>
+<td>43</td>
+<td>69</td>
+</tr>
+<tr>
+<td>40</td>
+<td>44</td>
+<td>52</td>
+<td>60</td>
+</tr>
+<tr>
+<td>61</td>
+<td>68</td>
+<td>68</td>
+<td>64</td>
+</tr>
+<tr>
+<td>56</td>
+<td>42</td>
+<td>44</td>
+<td>61</td>
+</tr>
+<tr>
+<td>43</td>
+<td>44</td>
+<td>64</td>
+<td>51</td>
+</tr>
+<tr>
+<td>51</td>
+<td>62</td>
+<td>46</td>
+<td>50</td>
+</tr>
+<tr>
+<td>68</td>
+<td>65</td>
+<td>61</td>
+<td>54</td>
+</tr>
+<tr>
+<td>46</td>
+<td>69</td>
+<td>65</td>
+<td>42</td>
+</tr>
+<tr>
+<td>41</td>
+<td>55</td>
+<td>43</td>
+<td>43</td>
+</tr>
+<tr>
+<td>68</td>
+<td>45</td>
+<td>66</td>
+<td>56</td>
+</tr>
+<tr>
+<td>65</td>
+<td>70</td>
+<td>69</td>
+<td>40</td>
+</tr>
+<tr>
+<td>55</td>
+<td>59</td>
+<td>54</td>
+<td>51</td>
+</tr>
+<tr>
+<td>69</td>
+<td>66</td>
+<td>68</td>
+<td>63</td>
+</tr>
+<tr>
+<td>51</td>
+<td>67</td>
+<td>40</td>
+<td>48</td>
+</tr>
+<tr>
+<td>69</td>
+<td>59</td>
+<td>55</td>
+<td>57</td>
+</tr>
+<tr>
+<td>45</td>
+<td>40</td>
+<td>50</td>
+<td>64</td>
+</tr>
+<tr>
+<td>57</td>
+<td>50</td>
+<td>56</td>
+<td>57</td>
+</tr>
+<tr>
+<td>66</td>
+<td>57</td>
+<td>63</td>
+<td>44</td>
+</tr>
+<tr>
+<td>49</td>
+<td>42</td>
+<td>65</td>
+<td>54</td>
+</tr>
+<tr>
+<td>67</td>
+<td>42</td>
+<td>46</td>
+<td>47</td>
+</tr>
+<tr>
+<td>69</td>
+<td>56</td>
+<td>47</td>
+<td>51</td>
+</tr>
+<tr>
+<td>42</td>
+<td>66</td>
+<td>64</td>
+<td>62</td>
+</tr>
+<tr>
+<td>68</td>
+<td>45</td>
+<td>47</td>
+<td>60</td>
+</tr>
+<tr>
+<td>62</td>
+<td>60</td>
+<td>41</td>
+<td>67</td>
+</tr>
+<tr>
+<td>53</td>
+<td>56</td>
+<td>63</td>
+<td>56</td>
+</tr>
+<tr>
+<td>66</td>
+<td>62</td>
+<td>63</td>
+<td>46</td>
+</tr>
+<tr>
+<td>57</td>
+<td>41</td>
+<td>59</td>
+<td>54</td>
+</tr>
+<tr>
+<td>55</td>
+<td>68</td>
+<td>59</td>
+<td>54</td>
+</tr>
+<tr>
+<td>40</td>
+<td>53</td>
+<td>46</td>
+<td>61</td>
+</tr>
+<tr>
+<td>43</td>
+<td>42</td>
+<td>44</td>
+<td>52</td>
+</tr>
+<tr>
+<td>49</td>
+<td>59</td>
+<td>46</td>
+<td>52</td>
+</tr>
+<tr>
+<td>54</td>
+<td>57</td>
+<td>70</td>
+<td>70</td>
+</tr>
+<tr>
+<td>68</td>
+<td>41</td>
+<td>68</td>
+<td>53</td>
+</tr>
+<tr>
+<td>47</td>
+<td>69</td>
+<td>47</td>
+<td>43</td>
+</tr>
+<tr>
+<td>65</td>
+<td>49</td>
+<td>67</td>
+<td>69</td>
+</tr>
+<tr>
+<td>44</td>
+<td>70</td>
+<td>43</td>
+<td>46</td>
+</tr>
+<tr>
+<td>58</td>
+<td>61</td>
+<td>47</td>
+<td>67</td>
+</tr>
+<tr>
+<td>69</td>
+<td>50</td>
+<td>43</td>
+<td>68</td>
+</tr>
+<tr>
+<td>61</td>
+<td>60</td>
+<td>45</td>
+<td>51</td>
+</tr>
+<tr>
+<td>40</td>
+<td>40</td>
+<td>63</td>
+<td>53</td>
+</tr>
+<tr>
+<td>56</td>
+<td>55</td>
+<td>43</td>
+<td>68</td>
+</tr>
+<tr>
+<td>40</td>
+<td>69</td>
+<td>59</td>
+<td>61</td>
+</tr>
+<tr>
+<td>41</td>
+<td>60</td>
+<td>49</td>
+<td>58</td>
+</tr>
+<tr>
+<td>56</td>
+<td>64</td>
+<td>58</td>
+<td>50</td>
+</tr>
+<tr>
+<td>45</td>
+<td>60</td>
+<td>40</td>
+<td>67</td>
+</tr>
+<tr>
+<td>59</td>
+<td>55</td>
+<td>48</td>
+<td>63</td>
+</tr>
+<tr>
+<td>40</td>
+<td>53</td>
+<td>50</td>
+<td>59</td>
+</tr>
+<tr>
+<td>68</td>
+<td>58</td>
+<td>55</td>
+<td>63</td>
+</tr>
+<tr>
+<td>46</td>
+<td>62</td>
+<td>67</td>
+<td>49</td>
+</tr>
+<tr>
+<td>41</td>
+<td>40</td>
+<td>61</td>
+<td>48</td>
+</tr>
+<tr>
+<td>61</td>
+<td>49</td>
+<td>42</td>
+<td>63</td>
+</tr>
+<tr>
+<td>42</td>
+<td>57</td>
+<td>49</td>
+<td>57</td>
+</tr>
+<tr>
+<td>43</td>
+<td>64</td>
+<td>59</td>
+<td>56</td>
+</tr>
+<tr>
+<td>43</td>
+<td>60</td>
+<td>50</td>
+<td>47</td>
+</tr>
+<tr>
+<td>40</td>
+<td>62</td>
+<td>40</td>
+<td>53</td>
+</tr>
+<tr>
+<td>51</td>
+<td>41</td>
+<td>66</td>
+<td>57</td>
+</tr>
+<tr>
+<td>43</td>
+<td>52</td>
+<td>61</td>
+<td>67</td>
+</tr>
+<tr>
+<td>48</td>
+<td>62</td>
+<td>58</td>
+<td>52</td>
+</tr>
+<tr>
+<td>47</td>
+<td>65</td>
+<td>41</td>
+<td>59</td>
+</tr>
+<tr>
+<td>68</td>
+<td>43</td>
+<td>64</td>
+<td>65</td>
+</tr>
+<tr>
+<td>57</td>
+<td>42</td>
+<td>63</td>
+<td>49</td>
+</tr>
+<tr>
+<td>54</td>
+<td>63</td>
+<td>67</td>
+<td>53</td>
+</tr>
+<tr>
+<td>48</td>
+<td>47</td>
+<td>42</td>
+<td>49</td>
+</tr>
+<tr>
+<td>57</td>
+<td>66</td>
+<td>57</td>
+<td>61</td>
+</tr>
+<tr>
+<td>48</td>
+<td>40</td>
+<td>57</td>
+<td>64</td>
+</tr>
+<tr>
+<td>50</td>
+<td>48</td>
+<td>60</td>
+<td>70</td>
+</tr>
+<tr>
+<td>69</td>
+<td>70</td>
+<td>63</td>
+<td>52</td>
+</tr>
+<tr>
+<td>45</td>
+<td>47</td>
+<td>57</td>
+<td>50</td>
+</tr>
+<tr>
+<td>56</td>
+<td>40</td>
+<td>70</td>
+<td>64</td>
+</tr>
+<tr>
+<td>52</td>
+<td>61</td>
+<td>62</td>
+<td>46</td>
+</tr>
+<tr>
+<td>44</td>
+<td>42</td>
+<td>57</td>
+<td>55</td>
+</tr>
+<tr>
+<td>48</td>
+<td>49</td>
+<td>53</td>
+<td>67</td>
+</tr>
+<tr>
+<td>50</td>
+<td>51</td>
+<td>65</td>
+<td>49</td>
+</tr>
+<tr>
+<td>50</td>
+<td>49</td>
+<td>41</td>
+<td>40</td>
+</tr>
+<tr>
+<td>60</td>
+<td>47</td>
+<td>65</td>
+<td>59</td>
+</tr>
+<tr>
+<td>45</td>
+<td>64</td>
+<td>60</td>
+<td>59</td>
+</tr>
+<tr>
+<td>63</td>
+<td>58</td>
+<td>51</td>
+<td>52</td>
+</tr>
+<tr>
+<td>47</td>
+<td>42</td>
+<td>48</td>
+<td>55</td>
+</tr>
+<tr>
+<td>57</td>
+<td>49</td>
+<td>70</td>
+<td>55</td>
+</tr>
+<tr>
+<td>41</td>
+<td>46</td>
+<td>50</td>
+<td>48</td>
+</tr>
+<tr>
+<td>46</td>
+<td>59</td>
+<td>66</td>
+<td>68</td>
+</tr>
+<tr>
+<td>68</td>
+<td>53</td>
+<td>65</td>
+<td>46</td>
+</tr>
+<tr>
+<td>57</td>
+<td>66</td>
+<td>45</td>
+<td>46</td>
+</tr>
+<tr>
+<td>48</td>
+<td>40</td>
+<td>61</td>
+<td>51</td>
+</tr>
+<tr>
+<td>49</td>
+<td>62</td>
+<td>64</td>
+<td>58</td>
+</tr>
+<tr>
+<td>48</td>
+<td>66</td>
+<td>56</td>
+<td>56</td>
+</tr>
+<tr>
+<td>48</td>
+<td>63</td>
+<td>62</td>
+<td>67</td>
+</tr>
+<tr>
+<td>42</td>
+<td>44</td>
+<td>40</td>
+<td>42</td>
+</tr>
+<tr>
+<td>50</td>
+<td>63</td>
+<td>41</td>
+<td>43</td>
+</tr>
+<tr>
+<td>63</td>
+<td>44</td>
+<td>66</td>
+<td>43</td>
+</tr>
+<tr>
+<td>62</td>
+<td>41</td>
+<td>63</td>
+<td>47</td>
+</tr>
+<tr>
+<td>55</td>
+<td>67</td>
+<td>45</td>
+<td>59</td>
+</tr>
+<tr>
+<td>44</td>
+<td>43</td>
+<td>68</td>
+<td>65</td>
+</tr>
+<tr>
+<td>70</td>
+<td>44</td>
+<td>66</td>
+<td>46</td>
+</tr>
+<tr>
+<td>63</td>
+<td>63</td>
+<td>55</td>
+<td>43</td>
+</tr>
+<tr>
+<td>40</td>
+<td>55</td>
+<td>51</td>
+<td>69</td>
+</tr>
+<tr>
+<td>40</td>
+<td>64</td>
+<td>43</td>
+<td>54</td>
+</tr>
+<tr>
+<td>55</td>
+<td>53</td>
+<td>64</td>
+<td>52</td>
+</tr>
+<tr>
+<td>57</td>
+<td>41</td>
+<td>62</td>
+<td>50</td>
+</tr>
+<tr>
+<td>43</td>
+<td>44</td>
+<td>46</td>
+<td>60</td>
+</tr>
+<tr>
+<td>51</td>
+<td>69</td>
+<td>62</td>
+<td>56</td>
+</tr>
+<tr>
+<td>69</td>
+<td>61</td>
+<td>59</td>
+<td>62</td>
+</tr>
+<tr>
+<td>45</td>
+<td>50</td>
+<td>54</td>
+<td>57</td>
+</tr>
+<tr>
+<td>44</td>
+<td>56</td>
+<td>58</td>
+<td>44</td>
+</tr>
+<tr>
+<td>64</td>
+<td>65</td>
+<td>43</td>
+<td>55</td>
+</tr>
+<tr>
+<td>65</td>
+<td>40</td>
+<td>43</td>
+<td>43</td>
+</tr>
+<tr>
+<td>53</td>
+<td>51</td>
+<td>45</td>
+<td>62</td>
+</tr>
+<tr>
+<td>41</td>
+<td>57</td>
+<td>56</td>
+<td>67</td>
+</tr>
+<tr>
+<td>64</td>
+<td>63</td>
+<td>58</td>
+<td>59</td>
+</tr>
+<tr>
+<td>59</td>
+<td>56</td>
+<td>61</td>
+<td>69</td>
+</tr>
+<tr>
+<td>56</td>
+<td>61</td>
+<td>68</td>
+<td>52</td>
+</tr>
+<tr>
+<td>50</td>
+<td>59</td>
+<td>63</td>
+<td>69</td>
+</tr>
+<tr>
+<td>42</td>
+<td>43</td>
+<td>68</td>
+<td>47</td>
+</tr>
+<tr>
+<td>47</td>
+<td>43</td>
+<td>41</td>
+<td>50</td>
+</tr>
+<tr>
+<td>41</td>
+<td>55</td>
+<td>55</td>
+<td>63</td>
+</tr>
+<tr>
+<td>62</td>
+<td>51</td>
+<td>62</td>
+<td>46</td>
+</tr>
+<tr>
+<td>40</td>
+<td>44</td>
+<td>50</td>
+<td>46</td>
+</tr>
+<tr>
+<td>53</td>
+<td>51</td>
+<td>55</td>
+<td>42</td>
+</tr>
+<tr>
+<td>69</td>
+<td>43</td>
+<td>62</td>
+<td>41</td>
+</tr>
+<tr>
+<td>42</td>
+<td>55</td>
+<td>42</td>
+<td>53</td>
+</tr>
+<tr>
+<td>42</td>
+<td>49</td>
+<td>43</td>
+<td>58</td>
+</tr>
+<tr>
+<td>51</td>
+<td>69</td>
+<td>50</td>
+<td>57</td>
+</tr>
+<tr>
+<td>47</td>
+<td>65</td>
+<td>41</td>
+<td>70</td>
+</tr>
+<tr>
+<td>53</td>
+<td>62</td>
+<td>46</td>
+<td>40</td>
+</tr>
+<tr>
+<td>43</td>
+<td>67</td>
+<td>54</td>
+<td>55</td>
+</tr>
+<tr>
+<td>58</td>
+<td>66</td>
+<td>59</td>
+<td>61</td>
+</tr>
+<tr>
+<td>49</td>
+<td>49</td>
+<td>60</td>
+<td>43</td>
+</tr>
+<tr>
+<td>43</td>
+<td>49</td>
+<td>63</td>
+<td>58</td>
+</tr>
+<tr>
+<td>43</td>
+<td>61</td>
+<td>41</td>
+<td>55</td>
+</tr>
+<tr>
+<td>66</td>
+<td>40</td>
+<td>49</td>
+<td>64</td>
+</tr>
+<tr>
+<td>43</td>
+<td>47</td>
+<td>46</td>
+<td>45</td>
+</tr>
+<tr>
+<td>68</td>
+<td>56</td>
+<td>55</td>
+<td>46</td>
+</tr>
+<tr>
+<td>48</td>
+<td>67</td>
+<td>66</td>
+<td>60</td>
+</tr>
+<tr>
+<td>51</td>
+<td>55</td>
+<td>56</td>
+<td>70</td>
+</tr>
+<tr>
+<td>58</td>
+<td>43</td>
+<td>69</td>
+<td>62</td>
+</tr>
+<tr>
+<td>63</td>
+<td>60</td>
+<td>63</td>
+<td>61</td>
+</tr>
+<tr>
+<td>44</td>
+<td>43</td>
+<td>69</td>
+<td>68</td>
+</tr>
+<tr>
+<td>61</td>
+<td>54</td>
+<td>54</td>
+<td>70</td>
+</tr>
+<tr>
+<td>53</td>
+<td>43</td>
+<td>47</td>
+<td>55</td>
+</tr>
+<tr>
+<td>51</td>
+<td>69</td>
+<td>55</td>
+<td>41</td>
+</tr>
+<tr>
+<td>41</td>
+<td>60</td>
+<td>69</td>
+<td>54</td>
+</tr>
+<tr>
+<td>50</td>
+<td>43</td>
+<td>40</td>
+<td>59</td>
+</tr>
+<tr>
+<td>63</td>
+<td>43</td>
+<td>43</td>
+<td>61</td>
+</tr>
+<tr>
+<td>45</td>
+<td>44</td>
+<td>53</td>
+<td>54</td>
+</tr>
+<tr>
+<td>63</td>
+<td>45</td>
+<td>44</td>
+<td>56</td>
+</tr>
+<tr>
+<td>66</td>
+<td>69</td>
+<td>49</td>
+<td>57</td>
+</tr>
+<tr>
+<td>66</td>
+<td>56</td>
+<td>42</td>
+<td>60</td>
+</tr>
+<tr>
+<td>62</td>
+<td>58</td>
+<td>63</td>
+<td>46</td>
+</tr>
+<tr>
+<td>52</td>
+<td>68</td>
+<td>45</td>
+<td>49</td>
+</tr>
+<tr>
+<td>49</td>
+<td>41</td>
+<td>67</td>
+<td>66</td>
+</tr>
+<tr>
+<td>40</td>
+<td>61</td>
+<td>51</td>
+<td>65</td>
+</tr>
+<tr>
+<td>58</td>
+<td>62</td>
+<td>42</td>
+<td>48</td>
+</tr>
+<tr>
+<td>56</td>
+<td>62</td>
+<td>53</td>
+<td>66</td>
+</tr>
+<tr>
+<td>46</td>
+<td>42</td>
+<td>66</td>
+<td>46</td>
+</tr>
+<tr>
+<td>63</td>
+<td>45</td>
+<td>46</td>
+<td>49</td>
+</tr>
+<tr>
+<td>65</td>
+<td>46</td>
+<td>60</td>
+<td>63</td>
+</tr>
+<tr>
+<td>46</td>
+<td>48</td>
+<td>41</td>
+<td>59</td>
+</tr>
+<tr>
+<td>70</td>
+<td>42</td>
+<td>63</td>
+<td>69</td>
+</tr>
+<tr>
+<td>70</td>
+<td>42</td>
+<td>63</td>
+<td>69</td>
+</tr>
+</tbody>
+</table>
+<p>Berikut code untuk menghitung mean, median, modus, standar deviasi, varian, skewness dan quartil (1, 2, 3).</p>
+<div class="codehilite"><pre><span></span><span class="n">colum</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">colum</span> <span class="p">:</span>
+    <span class="n">ds</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="n">x</span><span class="p">]]</span>
+    <span class="n">desc</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+    <span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">desc</span><span class="p">]</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Detail kolom&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;rata-rata: &quot;</span><span class="p">,</span><span class="n">array</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Median: &quot;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ds</span><span class="p">)))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Modus: &quot;</span><span class="p">,</span><span class="n">stats</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">ds</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Standard deviasi: &quot;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ds</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;varian: &quot;</span><span class="p">,</span><span class="n">stats</span><span class="o">.</span><span class="n">variation</span><span class="p">(</span><span class="n">ds</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Skewness: &quot;</span><span class="p">,</span><span class="n">stats</span><span class="o">.</span><span class="n">skew</span><span class="p">(</span><span class="n">ds</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Quartil 1: &quot;</span><span class="p">,</span><span class="n">array</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Quartil 2: &quot;</span><span class="p">,</span><span class="n">array</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Quartil 3: &quot;</span><span class="p">,</span><span class="n">array</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+<p>Output :</p>
+<div class="codehilite"><pre><span></span><span class="n">Detail</span> <span class="n">kolom</span> <span class="n">Data</span> <span class="mi">1</span>
+<span class="n">rata</span><span class="o">-</span><span class="n">rata</span><span class="p">:</span>  <span class="mf">54.298</span>
+<span class="n">Median</span><span class="p">:</span>  <span class="mf">54.0</span>
+<span class="n">Modus</span><span class="p">:</span>  <span class="n">ModeResult</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">45</span><span class="p">]),</span> <span class="n">count</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">30</span><span class="p">]))</span>
+<span class="n">Standard</span> <span class="n">deviasi</span><span class="p">:</span>  <span class="mf">9.282736449991457</span>
+<span class="n">varian</span><span class="p">:</span>  <span class="mf">0.17095908596985998</span>
+<span class="n">Skewness</span><span class="p">:</span>  <span class="mf">0.10699559933556159</span>
+<span class="n">Quartil</span> <span class="mi">1</span><span class="p">:</span>  <span class="mf">45.0</span>
+<span class="n">Quartil</span> <span class="mi">2</span><span class="p">:</span>  <span class="mf">54.0</span>
+<span class="n">Quartil</span> <span class="mi">3</span><span class="p">:</span>  <span class="mf">63.0</span>
+
+
+<span class="n">Detail</span> <span class="n">kolom</span> <span class="n">Data</span> <span class="mi">2</span>
+<span class="n">rata</span><span class="o">-</span><span class="n">rata</span><span class="p">:</span>  <span class="mf">54.662</span>
+<span class="n">Median</span><span class="p">:</span>  <span class="mf">55.0</span>
+<span class="n">Modus</span><span class="p">:</span>  <span class="n">ModeResult</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">40</span><span class="p">]),</span> <span class="n">count</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">25</span><span class="p">]))</span>
+<span class="n">Standard</span> <span class="n">deviasi</span><span class="p">:</span>  <span class="mf">9.335510484167429</span>
+<span class="n">varian</span><span class="p">:</span>  <span class="mf">0.17078611254925596</span>
+<span class="n">Skewness</span><span class="p">:</span>  <span class="mf">0.0049022431123069725</span>
+<span class="n">Quartil</span> <span class="mi">1</span><span class="p">:</span>  <span class="mf">46.0</span>
+<span class="n">Quartil</span> <span class="mi">2</span><span class="p">:</span>  <span class="mf">55.0</span>
+<span class="n">Quartil</span> <span class="mi">3</span><span class="p">:</span>  <span class="mf">63.0</span>
+
+
+<span class="n">Detail</span> <span class="n">kolom</span> <span class="n">Data</span> <span class="mi">3</span>
+<span class="n">rata</span><span class="o">-</span><span class="n">rata</span><span class="p">:</span>  <span class="mf">54.876</span>
+<span class="n">Median</span><span class="p">:</span>  <span class="mf">55.0</span>
+<span class="n">Modus</span><span class="p">:</span>  <span class="n">ModeResult</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">59</span><span class="p">]),</span> <span class="n">count</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">22</span><span class="p">]))</span>
+<span class="n">Standard</span> <span class="n">deviasi</span><span class="p">:</span>  <span class="mf">9.032863554820253</span>
+<span class="n">varian</span><span class="p">:</span>  <span class="mf">0.1646049922519909</span>
+<span class="n">Skewness</span><span class="p">:</span>  <span class="mf">0.0008010185955818402</span>
+<span class="n">Quartil</span> <span class="mi">1</span><span class="p">:</span>  <span class="mf">47.0</span>
+<span class="n">Quartil</span> <span class="mi">2</span><span class="p">:</span>  <span class="mf">55.0</span>
+<span class="n">Quartil</span> <span class="mi">3</span><span class="p">:</span>  <span class="mf">63.0</span>
+
+
+<span class="n">Detail</span> <span class="n">kolom</span> <span class="n">Data</span> <span class="mi">4</span>
+<span class="n">rata</span><span class="o">-</span><span class="n">rata</span><span class="p">:</span>  <span class="mf">55.414</span>
+<span class="n">Median</span><span class="p">:</span>  <span class="mf">56.0</span>
+<span class="n">Modus</span><span class="p">:</span>  <span class="n">ModeResult</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">59</span><span class="p">]),</span> <span class="n">count</span><span class="o">=</span><span class="n">array</span><span class="p">([</span><span class="mi">26</span><span class="p">]))</span>
+<span class="n">Standard</span> <span class="n">deviasi</span><span class="p">:</span>  <span class="mf">8.593171940558387</span>
+<span class="n">varian</span><span class="p">:</span>  <span class="mf">0.15507221894392006</span>
+<span class="n">Skewness</span><span class="p">:</span>  <span class="o">-</span><span class="mf">0.04397102735251384</span>
+<span class="n">Quartil</span> <span class="mi">1</span><span class="p">:</span>  <span class="mf">48.75</span>
+<span class="n">Quartil</span> <span class="mi">2</span><span class="p">:</span>  <span class="mf">56.0</span>
+<span class="n">Quartil</span> <span class="mi">3</span><span class="p">:</span>  <span class="mf">62.25</span>
+</pre></div>
+
+<p><img alt="" src="data:image/png;base64,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" /></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="IDENTITAS DIRI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                IDENTITAS DIRI
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../specimen/" title="MENGUKUR JARAK DATA" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                MENGUKUR JARAK DATA
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 - 2020 Rena Annisa
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/squidfunk" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://instagram.com/rena_anns" class="md-footer-social__link fa fa-instagram"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.8c0d971c.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
